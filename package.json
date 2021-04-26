@@ -1,0 +1,29 @@
+{
+  "name": "pxdecoder",
+  "version": "1.0.0",
+  "description": "Easily decode all Cgt strings for Perimeter C scripts.",
+  "main": "pxDecode.js",
+  "bin": "pxDecode.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "perimeterx",
+    "px",
+    "pxdecode",
+    "px2",
+    "px3",
+    "decode px",
+    "decode perimeter x"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    
+  }
+}
