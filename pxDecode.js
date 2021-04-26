@@ -1,9 +1,11 @@
 #!/usr/bin/env node
-let fs = require("fs");
 var colors = require('colors');
 var args = process.argv.slice(2);
 let path = args[1];
 let output = args[3];
+var fs = require('fs');
+const {Base64} = require('js-base64');
+
 
 let pxDecodeStrings = function (path, output) {
     let cgtRegex = /(?=\Cgt)(.*?)(?=\")/g
@@ -30,7 +32,13 @@ let pxDecodeStrings = function (path, output) {
             return console.log(err);
         }
         console.log(colors.green(`${path} was successfully decoded and saved at: ${output}`));
-        let logo = fs.readFileSync("logo.txt", 'utf8');
+        let logo = Base64.decode(`ICAgICAgICAgICAgICBfICAgICAgICAgICAgICAgICAgICBfICAgICAgICAgICAKICAgICAgICAg
+        ICAgIHwgfCAgICAgICAgICAgICAgICAgIHwgfCAgICAgICAgICAKIF8gX19fXyAgX19fX3wgfCBf
+        X18gIF9fXyBfX18gICBfX3wgfCBfX18gXyBfXyAKfCAnXyBcIFwvIC8gX2AgfC8gXyBcLyBfXy8g
+        XyBcIC8gX2AgfC8gXyBcICdfX3wKfCB8XykgPiAgPCAoX3wgfCAgX18vIChffCAoXykgfCAoX3wg
+        fCAgX18vIHwgICAKfCAuX18vXy9cX1xfXyxffFxfX198XF9fX1xfX18vIFxfXyxffFxfX198X3wg
+        ICAKfCB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfF98ICAg
+        ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=`)
         console.log(logo)
     }); 
 }

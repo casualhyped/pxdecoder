@@ -1,3 +1,3 @@
-pxDecode -path ./init.js -output ./output.js
+pxdecoder -path ./init.js -output ./output.js
 
 As simple as that!
