@@ -1,7 +1,7 @@
 {
   "name": "pxdecoder",
   "version": "1.0.0",
-  "description": "Easily decode all Cgt strings for Perimeter C scripts.",
+  "description": "Easily decode all Cgt strings for Perimeter X scripts.",
   "main": "pxDecode.js",
   "bin": "pxDecode.js",
   "dependencies": {
@@ -24,6 +24,13 @@
   "author": "",
   "license": "MIT",
   "repository": {
-    
+    "type": "git",
+    "url": "git+https://github.com/casualhyped/pxdecoder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/casualhyped/pxdecoder#readme"
+  },
+  "homepage": {
+    "url": "https://github.com/casualhyped/pxdecoder#readme"
   }
 }
