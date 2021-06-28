@@ -8,14 +8,14 @@ const {Base64} = require('js-base64');
 
 
 let pxDecodeStrings = function (path, output) {
-    let cgtRegex = /(?=\Cgt)(.*?)(?=\")/g
+    let cgtRegex = /(?=\Kg1)(.*?)(?=\")/g
 
     function atob(str) {
         return Buffer.from(str, 'base64').toString('binary');
     }
     
     function decodePxString(encoded) {
-        for(var i = atob(encoded), a = "ZSA8q7L", c = "", u = 0; u < i.length; ++u) {
+        for(var i = atob(encoded), a = "zUP6yS7", c = "", u = 0; u < i.length; ++u) {
             var f = a.charCodeAt(u % 7);
             c += String.fromCharCode(f ^ i.charCodeAt(u));
         }
